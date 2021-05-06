@@ -1,6 +1,6 @@
 {
   "name": "YouTube Timestamper",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Allows you to quickly copy current video/stream timestamp (with offset).",
   "manifest_version": 2,
   "permissions": ["tabs", "storage"],
@@ -28,5 +28,10 @@
     "16": "icons/icon16.png",
     "32": "icons/icon32.png",
     "128": "icons/icon128.png"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "hi@iamvis.co"
+    }
   }
 }
