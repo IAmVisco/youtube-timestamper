@@ -1,0 +1,14 @@
+.yt-timestamp-button {
+  color: var(--yt-spec-text-secondary);
+  cursor: pointer;
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  background-color: transparent;
+  border: none;
+}
+
+.yt-timestamp-button:hover {
+  color: var(--yt-spec-icon-active-other);
+}

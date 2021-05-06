@@ -1,5 +1,5 @@
-# HoloTools Portal
+# YouTube Timestamper
 
-Small and simple extension that allows you to open currently watched video or a stream on the HoloTools website. If used on a page that is not a YouTube video it will open HoloTools website in a new tab.
+Small Chrome extension that allows you to copy current stream timestamp in you clipboard in UTC format.
 
-Icon by https://twitter.com/KoshmarRin
+Icon by https://iconpacks.net
