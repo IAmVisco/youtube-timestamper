@@ -17,7 +17,7 @@ const injectButtons = async () => {
   const { offsets } = await getFromStorageAsync({ offsets: [-1, -15] });
 
   for (const offset of offsets) {
-    createButton(offset.toString(), offset);
+    createButton(offset.toString(), -offset);
   }
 };
 

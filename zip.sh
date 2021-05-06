@@ -1,3 +1,5 @@
 #!/bin/bash
 
-zip -r timestamper.zip src
+cd src
+zip -r timestamper.zip *
+mv timestamper.zip ..
