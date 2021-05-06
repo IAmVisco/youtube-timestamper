@@ -14,9 +14,9 @@ const injectButtons = async () => {
     menu.insertAdjacentElement('beforeend', copyButton);
   };
 
-  const res = await getFromStorageAsync({ offsets: [-1, -15] });
+  const { offsets } = await getFromStorageAsync({ offsets: [-1, -15] });
 
-  for (const offset of res.offsets) {
+  for (const offset of offsets) {
     createButton(offset.toString(), offset);
   }
 };
