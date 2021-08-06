@@ -27,7 +27,7 @@ const searchOnUpdate = () => {
   }
   const intervalReference = setInterval(() => {
     video = document.querySelector('#movie_player > div.html5-video-container > video');
-    menu = document.querySelector('#menu > ytd-menu-renderer');
+    menu = document.querySelector('#menu.ytd-video-primary-info-renderer > ytd-menu-renderer');
     if (menu) {
       clearInterval(intervalReference);
       injectButtons();
