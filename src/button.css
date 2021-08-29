@@ -1,5 +1,5 @@
 .yt-timestamp-button {
-  color: var(--yt-spec-text-secondary);
+  color: var(--yt-button-icon-button-text-color, var(--yt-spec-text-secondary));
   cursor: pointer;
   font-family: Roboto, Arial, sans-serif;
   font-size: 14px;
@@ -10,5 +10,5 @@
 }
 
 .yt-timestamp-button:hover {
-  color: var(--yt-spec-icon-active-other);
+  color: var(--yt-spec-text-secondary);
 }
