@@ -7,6 +7,7 @@
   text-transform: uppercase;
   background-color: transparent;
   border: none;
+  margin-left: 8px;
 }
 
 .yt-timestamp-button:hover {
