@@ -1,8 +1,6 @@
 let video = null;
 let menu = null;
 
-const formatTime = (seconds) => new Date(seconds * 1000).toISOString().substr(11, 8);
-
 const injectButtons = async () => {
   const createButton = (name = 'Copy', offset = 0) => {
     const copyButton = document.createElement('button');
@@ -10,6 +8,10 @@ const injectButtons = async () => {
     copyButton.className = 'yt-timestamp-button';
     copyButton.onclick = () => {
       navigator.clipboard.writeText(formatTime(video.currentTime - offset));
+      copyButton.innerHTML = '✓';
+      setTimeout(() => {
+        copyButton.innerHTML = name;
+      }, 1000)
     };
     menu.insertAdjacentElement('beforeend', copyButton);
   };
@@ -34,10 +36,10 @@ const searchOnUpdate = () => {
     }
   }, 500);
 };
-chrome.runtime.onMessage.addListener(
-  (request) => {
-    if (request.message === 'URL') {
-      setTimeout(searchOnUpdate, 3000);
-    }
-  });
+
+chrome.runtime.onMessage.addListener((message) => {
+  if (message.type === 'URL') {
+    setTimeout(searchOnUpdate, 3000);
+  }
+});
 searchOnUpdate();
